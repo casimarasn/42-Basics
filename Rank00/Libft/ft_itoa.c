@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: casimarasn <casimarasn@student.42.fr>      +#+  +:+       +#+        */
+/*   By: msedeno- <msedeno-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/09 19:43:48 by casimarasn        #+#    #+#             */
-/*   Updated: 2025/05/09 21:05:28 by casimarasn       ###   ########.fr       */
+/*   Created: 2026/02/05 19:47:23 by msedeno-          #+#    #+#             */
+/*   Updated: 2026/02/05 19:47:24 by msedeno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "libft.h"
 

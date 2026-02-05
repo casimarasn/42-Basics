@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   .main.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msedeno- <msedeno-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: msedeno- <msedeno-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 19:22:18 by msedeno-          #+#    #+#             */
-/*   Updated: 2025/05/14 13:47:51 by msedeno-         ###   ########.fr       */
+/*   Updated: 2026/02/05 19:48:06 by msedeno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,3 +103,16 @@ int	main(void)
 	free(str);
 	return (0);
 }
+/*int	main(void)
+{
+	char	str[] = "abecedario";
+	printf("%s\n", str);
+	ft_bzero(str, 4);
+	int i = 0;
+	while (i < 11)
+	{
+		printf("%c$\n", str[i]);
+		i++;
+	}
+	return (0);
+}*/

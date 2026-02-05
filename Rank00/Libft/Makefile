@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: msedeno- <msedeno-@student.42.fr>          +#+  +:+       +#+         #
+#    By: msedeno- <msedeno-@student.42malaga.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/24 11:54:30 by msedeno-          #+#    #+#              #
-#    Updated: 2025/05/14 09:39:40 by msedeno-         ###   ########.fr        #
+#    Updated: 2026/02/05 19:21:25 by msedeno-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,7 +68,7 @@ OBJ_BONUS = $(SRC_BONUS:%.c=%.o)
 
 
 
-INCLUDE = libtf.h
+INCLUDE = libft.h
 
 
 AR = ar rcs
@@ -82,7 +82,7 @@ $(NAME): $(OBJ)
 	$(AR) $@ $^
 
 %.o: %.c $(INCLUDE)
-	$(CC) $(CFLAGS) $(INCLUDES) -c  $@  $^
+	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
 bonus: $(OBJ) $(OBJ_BONUS)
 		$(AR) $(NAME) $(OBJ_BONUS)

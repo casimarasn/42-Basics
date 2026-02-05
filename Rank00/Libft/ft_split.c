@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msedeno- <msedeno-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: msedeno- <msedeno-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/09 12:03:16 by casimarasn        #+#    #+#             */
-/*   Updated: 2025/05/14 11:52:37 by msedeno-         ###   ########.fr       */
+/*   Updated: 2026/02/05 19:49:34 by msedeno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ static int	ft_fillar(char **list, char const *str, int wcount, char c)
 
 	i = 0;
 	wlen = 0;
-	while (wcount -- && str && *str)
+	while (wcount-- && str && *str)
 	{
 		while (*str == c)
 			str++;
@@ -54,7 +54,7 @@ static int	ft_fillar(char **list, char const *str, int wcount, char c)
 			free(list);
 			return (0);
 		}
-		str += wlen + 1;
+		str += wlen;
 		wlen = 0;
 		i++;
 	}
