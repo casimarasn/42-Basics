@@ -6,7 +6,7 @@
 /*   By: msedeno- <msedeno-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/09 12:03:16 by casimarasn        #+#    #+#             */
-/*   Updated: 2026/02/05 19:49:34 by msedeno-         ###   ########.fr       */
+/*   Updated: 2026/02/06 17:33:41 by msedeno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	wcount = ft_wordcount (s, c);
+	wcount = ft_wordcount(s, c);
 	result = malloc(sizeof(char *) * (wcount + 1));
 	if (!result)
 		return (NULL);

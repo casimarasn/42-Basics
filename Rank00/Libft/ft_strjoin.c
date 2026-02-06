@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msedeno- <msedeno-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: msedeno- <msedeno-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/07 21:58:13 by msedeno-          #+#    #+#             */
-/*   Updated: 2025/05/07 22:28:40 by msedeno-         ###   ########.fr       */
+/*   Updated: 2026/02/06 17:30:51 by msedeno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*s;
 	size_t	tlen;
 
+	if (!s1 || !s2)
+		return (NULL);
 	tlen = (ft_strlen(s1) + ft_strlen(s2) + 1);
 	s = (char *)malloc(tlen * sizeof(char));
 	if (!s)
