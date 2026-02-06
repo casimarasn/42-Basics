@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: casimarasn <casimarasn@student.42.fr>      +#+  +:+       +#+        */
+/*   By: msedeno- <msedeno-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/10 00:25:16 by casimarasn        #+#    #+#             */
-/*   Updated: 2025/05/10 01:07:01 by casimarasn       ###   ########.fr       */
+/*   Updated: 2026/02/06 10:55:18 by msedeno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

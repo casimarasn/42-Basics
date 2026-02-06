@@ -6,12 +6,13 @@
 /*   By: msedeno- <msedeno-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 19:22:18 by msedeno-          #+#    #+#             */
-/*   Updated: 2026/02/05 19:48:06 by msedeno-         ###   ########.fr       */
+/*   Updated: 2026/02/06 10:54:02 by msedeno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<stdio.h>
 #include<libft.h>
+
 int	main(void)
 {
 //ft_isalpha.c
@@ -75,7 +76,6 @@ int	main(void)
 }
 //ft_split.c
 
-
 	char const	*s = "hola 767 venga '^& si #( funciona";
 	char delim = ' ';
 	char	**result = ft_split(s, delim);
@@ -86,11 +86,8 @@ int	main(void)
 		printf("%s\n", result[i]);
 		i++;
 	}
-	return (0);
 }
-
 //calloc.c
-int	main(void)
 {
 	char	*str = ft_calloc(5, 1);
 	int	i = 0;
