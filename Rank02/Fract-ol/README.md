@@ -1,116 +1,117 @@
-# Fract-ol
+*Este proyecto ha sido creado como parte del currículo de 42 por msedeno-.*
 
-![Fractol Banner](https://img.shields.io/badge/42-Project-000000?style=flat-square&logo=42)
+# Fract-ol - 42 School Project
 
-**Fract-ol** is a graphical exploration project of fractal sets, specifically the Mandelbrot set and the Julia set. It allows users to navigate, zoom, and modify fractal parameters in real-time using a custom graphical interface built with the MLX42 library.
-
----
-
-## 🇪🇸 Español
-
-Este proyecto es una pequeña aplicación de exploración de fractales. Permite renderizar y navegar por los conjuntos de Mandelbrot y Julia, ofreciendo zoom infinito (hasta los límites del `double`) y personalización de colores.
-
-### Características
-- **Renderizado de Fractales**: Conjunto de Mandelbrot y conjunto de Julia.
-- **Navegación**: Desplazamiento (Pan) con flechas o WASD.
-- **Zoom**: Zoom in/out suave con la rueda del ratón centrado en el cursor.
-- **Interactividad Julia**: Modificación en tiempo real de los parámetros del conjunto de Julia.
-- **Optimización**: Renderizado eficiente usando manipulación directa de píxeles.
-
-### Instalación y Uso
-
-1. **Clonar el repositorio**:
-   ```bash
-   git clone https://github.com/tu_usuario/fract-ol.git
-   cd fract-ol
-   ```
-
-2. **Compilar**:
-   El proyecto usa la librería `MLX42` y `libft`.
-   ```bash
-   make
-   ```
-
-3. **Ejecutar**:
-   La sintaxis es: `./fractol <tipo> [param_real] [param_imag]`
-
-   - **Mandelbrot**:
-     ```bash
-     ./fractol mandelbrot
-     ```
-   - **Julia** (Parámetros por defecto):
-     ```bash
-     ./fractol julia
-     ```
-   - **Julia** (Parámetros personalizados):
-     ```bash
-     ./fractol julia -0.4 0.6
-     ```
-
-### Controles
-| Tecla / Acción | Función |
-|----------------|---------|
-| `Rueda Ratón` | Zoom In / Zoom Out (centrado en el ratón) |
-| `Flechas` / `WASD` | Mover la vista |
-| `Z` / `X` | Modificar Parte Real (Julia) |
-| `C` / `V` | Modificar Parte Imaginaria (Julia) |
-| `ESC` | Cerrar ventana |
+![Language](https://img.shields.io/badge/Language-C-blue)
+![School](https://img.shields.io/badge/School-42-black)
+![Success](https://img.shields.io/badge/Success-100%2F100-success)
 
 ---
 
-## 🇺🇸 English
+## 🇬🇧 English Version
 
-This project is a fractal exploration application. It renders and allows navigation through the Mandelbrot and Julia sets, offering smooth zoom and parameter customization.
+### Description
+Fract-ol is a graphical exploration project of fractal sets. The goal is to create a small fractal exploration program using the MiniLibX graphic library. This project allows you to understand the mathematical concept of fractals (like Mandelbrot and Julia sets), explore the infinite zoom capabilities, and learn how to manage window events and rendering optimization in C.
 
-### Features
-- **Fractal Rendering**: Mandelbrot set and Julia set.
-- **Navigation**: Pan view using Arrow keys or WASD.
-- **Zoom**: Smooth zoom in/out with the mouse wheel centered on the cursor.
-- **Julia Interactivity**: Real-time modification of the Julia set constants.
-- **Optimization**: Efficient rendering using direct pixel manipulation.
+### Instructions
+**Installation & Usage:**
+1. Clone the repository into your project folder.
+2. Run `make` to compile the program. This will generate the `fractol` executable.
+3. Clean up object files with `make clean` or remove everything with `make fclean`.
 
-### Installation & Usage
+**Running the program:**
+Execute the program with the fractal type as an argument:
+```bash
+./fractol <fractal_name> [optional_parameters]
+```
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your_username/fract-ol.git
-   cd fract-ol
-   ```
+Examples:
+- Mandelbrot: `./fractol mandelbrot`
+- Julia (default): `./fractol julia`
+- Julia (custom params): `./fractol julia -0.4 0.6`
 
-2. **Compile**:
-   The project requires `MLX42` and `libft` (included or compiled automatically).
-   ```bash
-   make
-   ```
+### Resources
+**References:**
+- [MiniLibX Documentation](https://github.com/codam-coding-college/MLX42)
+- [Fractal Foundation - What are Fractals?](https://fractalfoundation.org/resources/what-are-fractals/)
+- [Mandelbrot Set (Wikipedia)](https://en.wikipedia.org/wiki/Mandelbrot_set)
 
-3. **Run**:
-   Syntax: `./fractol <type> [real_param] [imag_param]`
+**AI Usage:**
+- **Task:** Documentation.
+  - **Details:** GitHub Copilot assisted in structuring and generating the content of this `README.md` file to comply with project submission requirements.
 
-   - **Mandelbrot**:
-     ```bash
-     ./fractol mandelbrot
-     ```
-   - **Julia** (Default parameters):
-     ```bash
-     ./fractol julia
-     ```
-   - **Julia** (Custom parameters):
-     ```bash
-     ./fractol julia -0.4 0.6
-     ```
+### Detailed Project Description
 
-### Controls
+#### 1. Supported Fractals
+| Fractal | Description | Command |
+| :--- | :--- | :--- |
+| **Mandelbrot** | The set of complex numbers $c$ for which the function $f_c(z) = z^2 + c$ does not diverge when iterated from $z=0$. | `./fractol mandelbrot` |
+| **Julia** | The set of values generated by iterating the function $f_c(z) = z^2 + c$ for a fixed complex number $c$. The shape varies depending on $c$. | `./fractol julia [real] [imag]` |
+
+#### 2. Controls
 | Key / Action | Function |
-|--------------|----------|
-| `Mouse Wheel` | Zoom In / Zoom Out (cursor centered) |
-| `Arrows` / `WASD` | Pan view |
-| `Z` / `X` | Modify Real constant (Julia) |
-| `C` / `V` | Modify Imaginary constant (Julia) |
-| `ESC` | Close window |
+| :--- | :--- |
+| `Mouse Wheel` | Zoom In / Zoom Out (centered on cursor). |
+| `Arrows` / `WASD` | Pan the view (Move up, down, left, right). |
+| `Z` / `X` | Modify Real constant (Julia Set). |
+| `C` / `V` | Modify Imaginary constant (Julia Set). |
+| `ESC` | Close the window and exit the program. |
 
 ---
 
-## 🛠️ Technical Details
-- Language: **C**
-- Graphics: **MLX42** (OpenGL based)
-- Algorithms: Iterative complex number calculation (escape time algorithm).
+## 🇪🇸 Versión en Español
+
+### Descripción
+Fract-ol es un proyecto de exploración gráfica de conjuntos fractales. El objetivo es crear un pequeño programa de exploración de fractales utilizando la librería gráfica MiniLibX. Este proyecto permite entender el concepto matemático de los fractales (como los conjuntos de Mandelbrot y Julia), explorar la capacidad de zoom infinito y aprender a gestionar eventos de ventana y optimización de renderizado en C.
+
+### Instrucciones
+**Instalación y Uso:**
+1. Clona el repositorio en tu carpeta de proyecto.
+2. Ejecuta `make` para compilar el programa. Esto generará el ejecutable `fractol`.
+3. Para limpiar los archivos objeto, ejecuta `make clean`. Para eliminar todo, incluido el ejecutable, ejecuta `make fclean`.
+
+**Ejecución del programa:**
+Ejecuta el programa con el tipo de fractal como argumento:
+```bash
+./fractol <nombre_fractal> [parametros_opcionales]
+```
+
+Ejemplos:
+- Mandelbrot: `./fractol mandelbrot`
+- Julia (por defecto): `./fractol julia`
+- Julia (parámetros personalizados): `./fractol julia -0.4 0.6`
+
+### Recursos
+**Referencias:**
+- [Documentación MLX42](https://github.com/codam-coding-college/MLX42)
+- [Fractal Foundation - ¿Qué son los fractales?](https://fractalfoundation.org/resources/what-are-fractals/)
+- [Conjunto de Mandelbrot (Wikipedia)](https://es.wikipedia.org/wiki/Conjunto_de_Mandelbrot)
+
+**Uso de IA:**
+- **Tarea:** Documentación.
+  - **Detalles:** GitHub Copilot asistió en la estructuración y generación del contenido de este archivo `README.md` para cumplir con los requisitos de entrega del proyecto.
+
+### Descripción Detallada del Proyecto
+
+#### 1. Fractales Soportados
+| Fractal | Descripción | Comando |
+| :--- | :--- | :--- |
+| **Mandelbrot** | El conjunto de números complejos $c$ para los cuales la función $f_c(z) = z^2 + c$ no diverge al iterar desde $z=0$. | `./fractol mandelbrot` |
+| **Julia** | El conjunto de valores generados al iterar la función $f_c(z) = z^2 + c$ para un número complejo fijo $c$. La forma varía según $c$. | `./fractol julia [real] [imag]` |
+
+#### 2. Controles
+| Tecla / Acción | Función |
+| :--- | :--- |
+| `Rueda del Ratón` | Zoom In / Zoom Out (centrado en el cursor). |
+| `Flechas` / `WASD`| Mover la vista (Arriba, abajo, izquierda, derecha). |
+| `Z` / `X` | Modificar constante Real (Conjunto de Julia). |
+| `C` / `V` | Modificar constante Imaginaria (Conjunto de Julia). |
+| `ESC` | Cerrar la ventana y salir del programa. |
+
+---
+
+<div align="center">
+  <b>Developed by msedeno-</b><br>
+  42 Málaga<br>
+  <a href="mailto:msedeno-@student.42malaga.com">msedeno-@student.42malaga.com</a>
+</div>

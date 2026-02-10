@@ -6,13 +6,13 @@
 /*   By: msedeno- <msedeno-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/04 23:01:00 by msedeno-          #+#    #+#             */
-/*   Updated: 2026/02/10 11:46:51 by msedeno-         ###   ########.fr       */
+/*   Updated: 2026/02/10 20:04:33 by msedeno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fractol.h"
 
-/* zoom centrado en (mx,my) en píxeles; factor < 1 = zoom in, > 1 = zoom out */
+/* Zoom centered at (mx,my) in pixels; factor < 1 = zoom in, > 1 = zoom out */
 void	zoom_at(t_fractal *fractal, double mx, double my, double factor)
 {
 	double	cx;
@@ -32,7 +32,7 @@ void	zoom_at(t_fractal *fractal, double mx, double my, double factor)
 	fractal->max_imag = fractal->min_imag + new_h;
 }
 
-/* Scroll callback: ajusta zoom y redibuja */
+/* Scroll callback: adjusts zoom and redraws */
 void	scroll_callback(double xdelta, double ydelta, void *param)
 {
 	t_fractal	*f;

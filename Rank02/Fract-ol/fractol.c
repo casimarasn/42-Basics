@@ -6,7 +6,7 @@
 /*   By: msedeno- <msedeno-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 21:13:41 by msedeno-          #+#    #+#             */
-/*   Updated: 2026/02/10 11:46:34 by msedeno-         ###   ########.fr       */
+/*   Updated: 2026/02/10 19:31:55 by msedeno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ void	render_fractols(t_fractal *fractal)
 
 void	init_fractal(t_fractal *fractal)
 {
-	fractal->mlx = mlx_init(WIDTH, HEIGHT, "pfractol", 1);
+	fractal->mlx = mlx_init(WIDTH, HEIGHT, "fract-ol", true);
 	if (!fractal->mlx)
 		return ;
 	fractal->image = mlx_new_image(fractal->mlx, WIDTH, HEIGHT);
@@ -82,6 +82,7 @@ int	main(int ac, char **av)
 	t_fractal	fractal;
 	t_atod		atod;
 
+	ft_bzero(&atod, sizeof(t_atod));
 	if (ac < 2)
 	{
 		ft_printf("Error: %s mandelbrot | julia <real> <imag>\n", av[0]);

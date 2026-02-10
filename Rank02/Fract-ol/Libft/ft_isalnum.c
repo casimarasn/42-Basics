@@ -6,10 +6,11 @@
 /*   By: msedeno- <msedeno-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 15:52:55 by msedeno-       #  #+#    #+#             */
-/*   Updated: 2026/02/10 17:35:14 by msedeno-         ###   ########.fr       */
+/*   Updated: 2026/02/10 19:22:23 by msedeno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
 int	ft_isalnum(int a)
 {
