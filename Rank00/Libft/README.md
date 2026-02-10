@@ -1,14 +1,4 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   README.md                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: msedeno- <msedeno-@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/06 13:06:10 by msedeno-          #+#    #+#             */
-/*   Updated: 2025/02/06 13:06:10 by msedeno-         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+*Este proyecto ha sido creado como parte del currículo de 42 por msedeno-.*
 
 # Libft - 42 School Project
 
@@ -23,7 +13,35 @@
 ### Description
 Libft is the first individual project at 42. It consists of creating a library of functions in C, which will be used in future projects throughout the curriculum. The goal is to understand how standard functions work, manage memory efficiently, and learn to create data structures like linked lists.
 
-### List of Functions
+### Instructions
+**Installation & Usage:**
+1. Clone the repository into your project folder.
+2. Run `make` to compile the standard functions. This will generate the `libft.a` file.
+3. Run `make bonus` to compile the library including the list manipulation functions.
+4. To clean up object files, run `make clean`. To remove everything including the library, run `make fclean`.
+
+**Example Usage:**
+Include the header in your C file:
+```c
+#include "libft.h"
+```
+Compile your project linking the library:
+```bash
+cc main.c libft.a -o program
+```
+
+### Resources
+**References:**
+- [Open Group Base Specifications (man pages)](https://pubs.opengroup.org/onlinepubs/9699919799/)
+- [C Standard Library documentation](https://en.cppreference.com/w/c/header)
+
+**AI Usage:**
+- **Task:** Header Normalization.
+  - **Details:** GitHub Copilot was used to automatically update and format the 42 headers across all `.c` and `.h` files to match the current user and email standards.
+- **Task:** Documentation.
+  - **Details:** GitHub Copilot assisted in structuring and generating the content of this `README.md` file to comply with project submission requirements.
+
+### Detailed Library Description (List of Functions)
 
 #### 1. Libc Functions
 Standard C library functions re-implemented.
@@ -93,7 +111,35 @@ Functions to manipulate lists.
 ### Descripción
 Libft es el primer proyecto individual en 42. Consiste en crear una librería de funciones en C, que serán utilizadas en futuros proyectos a lo largo del curso. El objetivo es entender cómo funcionan las funciones estándar, gestionar la memoria de manera eficiente y aprender a crear estructuras de datos como listas enlazadas.
 
-### Lista de Funciones
+### Instrucciones
+**Instalación y Uso:**
+1. Clona el repositorio en tu carpeta de proyecto.
+2. Ejecuta `make` para compilar las funciones estándar. Esto generará el archivo `libft.a`.
+3. Ejecuta `make bonus` para compilar la librería incluyendo las funciones de manipulación de listas.
+4. Para limpiar los archivos objeto, ejecuta `make clean`. Para eliminar todo, incluida la librería, ejecuta `make fclean`.
+
+**Ejemplo de uso:**
+Incluye el header en tu archivo C:
+```c
+#include "libft.h"
+```
+Compila tu proyecto enlazando la librería:
+```bash*Este proyecto ha sido creado como parte del currículo de 42 por msedeno-.*
+cc main.c libft.a -o programa
+```
+
+### Recursos
+**Referencias:**
+- [Open Group Base Specifications (man pages)](https://pubs.opengroup.org/onlinepubs/9699919799/)
+- [Documentación de la librería estándar de C](https://es.cppreference.com/w/c/header)
+
+**Uso de IA:**
+- **Tarea:** Normalización de Headers.
+  - **Detalles:** Se utilizó GitHub Copilot para actualizar y formatear automáticamente los headers de 42 en todos los archivos `.c` y `.h` conforme a los estándares de usuario e email actuales.
+- **Tarea:** Documentación.
+  - **Detalles:** GitHub Copilot asistió en la estructuración y generación del contenido de este archivo `README.md` para cumplir con los requisitos de entrega del proyecto.
+
+### Descripción detallada de la librería (Lista de Funciones)
 
 #### 1. Funciones de Libc
 Reimplementación de funciones de la librería estándar de C.
@@ -155,3 +201,11 @@ Funciones para manipular listas.
 | [`ft_lstclear`](ft_lstclear.c) | Elimina y libera el nodo dado y todos los sucesores de ese nodo. |
 | [`ft_lstiter`](ft_lstiter.c) | Itera la lista 'lst' y aplica la función 'f' en el contenido de cada nodo. |
 | [`ft_lstmap`](ft_lstmap.c) | Itera la lista 'lst' y aplica la función 'f' en el contenido de cada nodo. |
+
+---
+
+<div align="center">
+  <b>Developed by msedeno-</b><br>
+  42 Málaga<br>
+  <a href="mailto:msedeno-@student.42malaga.com">msedeno-@student.42malaga.com</a>
+</div>
