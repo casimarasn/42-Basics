@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msedeno- <msedeno-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: msedeno- <msedeno-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/24 19:48:04 by msedeno-          #+#    #+#             */
-/*   Updated: 2025/06/07 20:18:03 by msedeno-         ###   ########.fr       */
+/*   Updated: 2026/02/10 11:08:34 by msedeno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,11 @@ char	*ft_read_file(int fd, char *stash)
 
 	if (!stash)
 		stash = ft_strdup("");
+	if (!stash)
+		return (NULL);
 	buffer = (char *) malloc ((BUFFER_SIZE + 1) * sizeof (char));
 	if (!buffer)
-		return (NULL);
+		return (ft_free_memory(NULL, stash));
 	bytes = 1;
 	while (bytes > 0 && ft_strchr(stash, '\n') == NULL)
 	{
@@ -59,12 +61,14 @@ char	*ft_reset_line(char *stash)
 	if (stash[i] == '\0')
 	{
 		free (stash);
-		stash = NULL;
 		return (NULL);
 	}
 	aux = ft_substr(stash, i, ft_strlen(stash) - i);
 	if (!aux)
+	{
+		free(stash);
 		return (NULL);
+	}
 	free (stash);
 	stash = aux;
 	return (stash);
@@ -76,10 +80,7 @@ char	*get_next_line(int fd)
 	static char	*stash = NULL;
 
 	if (fd < 0 || BUFFER_SIZE <= 0 || fd >= OPEN_MAX)
-	{
-		stash = NULL;
 		return (NULL);
-	}
 	stash = ft_read_file (fd, stash);
 	if (!stash || stash[0] == '\0')
 	{
@@ -87,9 +88,16 @@ char	*get_next_line(int fd)
 		stash = NULL;
 		return (NULL);
 	}
-	line = ft_substr(stash, 0, ft_strchr(stash, '\n') - stash + 1);
+	if (ft_strchr(stash, '\n'))
+		line = ft_substr(stash, 0, ft_strchr(stash, '\n') - stash + 1);
+	else
+		line = ft_substr(stash, 0, ft_strlen(stash));
 	if (!line)
+	{
+		free(stash);
+		stash = NULL;
 		return (NULL);
+	}
 	stash = ft_reset_line(stash);
 	return (line);
 }
