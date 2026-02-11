@@ -1,0 +1,14 @@
+.DS_Store
+**/.DS_Store
+
+# Objetos y librerías
+*.o
+*.a
+
+# Ejecutables de prueba
+*.out
+a.out
+
+# Basura del sistema
+.DS_Store
+*.swp
