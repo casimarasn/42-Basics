@@ -6,10 +6,13 @@
 /*   By: msedeno- <msedeno-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 16:44:10 by msedeno-       #  #+#    #+#             */
-/*   Updated: 2026/02/10 17:35:22 by msedeno-         ###   ########.fr       */
+/*   Updated: 2026/02/11 16:57:08 by msedeno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 		return (1);
