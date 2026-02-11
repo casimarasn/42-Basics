@@ -3,17 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap_bonus.h                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msedeno- <msedeno-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: msedeno- <msedeno-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/12 17:28:41 by msedeno-          #+#    #+#             */
-/*   Updated: 2025/10/14 18:28:25 by msedeno-         ###   ########.fr       */
+/*   Updated: 2026/02/11 23:21:47 by msedeno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_BONUS_H
 # define PUSH_SWAP_BONUS_H
 
-# include <stdio.h>
 # include <unistd.h>
 # include <stdlib.h>
 # include <limits.h>

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   is_valid_bonus.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: casimarasn <casimarasn@student.42.fr>      +#+  +:+       +#+        */
+/*   By: msedeno- <msedeno-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/25 16:37:58 by casimarasn        #+#    #+#             */
-/*   Updated: 2025/10/12 15:22:52 by casimarasn       ###   ########.fr       */
+/*   Updated: 2026/02/11 23:21:03 by msedeno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

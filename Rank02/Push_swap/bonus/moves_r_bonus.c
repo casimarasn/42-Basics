@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   moves_r_bonus.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msedeno- <msedeno-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: msedeno- <msedeno-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/12 17:32:55 by msedeno-          #+#    #+#             */
-/*   Updated: 2025/10/14 18:34:13 by msedeno-         ###   ########.fr       */
+/*   Updated: 2026/02/11 23:21:37 by msedeno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ void	rra(t_stack **a, int print)
 
 void	rrb(t_stack **b, int print)
 {
-	if (!b || !*b || (*b)->next == *b)
+	if (!b || !*b || (*b)->prev == *b)
 		return ;
 	*b = (*b)->prev;
 	if (print == 1)

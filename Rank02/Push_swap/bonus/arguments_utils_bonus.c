@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   arguments_utils_bonus.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: casimarasn <casimarasn@student.42.fr>      +#+  +:+       +#+        */
+/*   By: msedeno- <msedeno-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/29 20:43:10 by casimarasn        #+#    #+#             */
-/*   Updated: 2025/10/12 15:22:39 by casimarasn       ###   ########.fr       */
+/*   Updated: 2026/02/11 23:20:59 by msedeno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
