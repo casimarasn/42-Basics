@@ -1,0 +1,24 @@
+# --- Ejecutables del proyecto ---
+push_swap
+checker
+a.out
+
+# --- Archivos de compilación ---
+*.o
+*.a
+
+# --- Directorios de objetos (Main y Libft) ---
+# El Makefile crea estas carpetas para guardar los .o
+obj/
+obj_bonus/
+libft/obj/
+
+# --- Debugging (Symbilos de debug en Mac) ---
+*.dSYM/
+
+# --- Archivos del Sistema (macOS) ---
+.DS_Store
+
+# --- Configuración del Editor (VS Code) ---
+.vscode/
+

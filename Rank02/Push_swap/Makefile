@@ -2,7 +2,7 @@ NAME = push_swap
 BONUS_NAME = checker
 INCLUDE = push_swap.h
 CC = cc
-CFLAGS = -Wall -Wextra -Werror -I. -Ilibft
+CFLAGS = -Wall -Wextra -Werror -I. -Ilibft/inc
 RM = rm -rf
 
 OBJDIR = obj
@@ -54,22 +54,21 @@ $(OBJDIR_BONUS)/%.o: bonus/%.c $(INCLUDE)
 	@echo "🛠 Compiling Bonus $<..."
 	@$(CC) $(CFLAGS) -c $< -o $@
 
-$(NAME): $(OBJS) $(LIBFT)
+$(NAME): $(OBJS)
+    @echo "📦 Checking libft..."
+	    @$(MAKE) -s -C $(LIBFT_DIR)
 	@echo "🔗 Linking $(NAME)..."
 	@$(CC) $(CFLAGS) $(OBJS) $(LIBFT) -o $(NAME)
 	@echo "✅ Compilation finished successfully."
 
 bonus: $(BONUS_NAME)
 
-$(BONUS_NAME): $(OBJS_BONUS) $(LIBFT)
+$(BONUS_NAME): $(OBJS_BONUS)
+	@echo "📦 Checking libft for bonus..."
+    @$(MAKE) -s -C $(LIBFT_DIR)
 	@echo "🔗 Linking $(BONUS_NAME)..."
 	@$(CC) $(CFLAGS) $(OBJS_BONUS) $(LIBFT) -o $(BONUS_NAME)
 	@echo "✅ Compilation Bonus completed."
-
-#build libft only if libft.a is outdated
-$(LIBFT):
-	@echo "📦 Building libft..."
-	@$(MAKE) -s -C $(LIBFT_DIR)
 
 clean:
 	@echo "🧹 Cleaning objects..."
