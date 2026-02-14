@@ -1,8 +1,7 @@
 NAME = pipex
 INCLUDE = pipex.h
-AR = ar rcs
 CC = cc
-CFLAGS = -Wall -Wextra -Werror -I. -Ilibft -Ift_printf
+CFLAGS = -Wall -Wextra -Werror -I. -Ilibft
 RM = rm -rf
 
 OBJDIR = obj
@@ -10,9 +9,6 @@ OBJDIR = obj
 #librarys
 LIBFT_DIR = libft
 LIBFT = $(LIBFT_DIR)/libft.a
-
-PRINTF_DIR = printf
-PRINTF = $(PRINTF_DIR)/libftprintf.a
 
 FILES = pipex.c\
 		errors_free.c\
@@ -25,14 +21,14 @@ DEPS = $(OBJS:.o=.d)
 
 all: $(NAME)
 
-$(OBJDIR)/%.o: %.c $(INCLUDE)
+$(OBJDIR)/%.o: %.c
 	@mkdir -p $(OBJDIR)
 	@echo "🛠 Compiling $<..."
 	@$(CC) $(CFLAGS) -MMD -MP -c $< -o $@
 
-$(NAME): $(OBJS) $(LIBFT) $(PRINTF)
+$(NAME): $(OBJS) $(LIBFT) 
 	@echo "🔗 Linking $(NAME)..."
-	@$(CC) $(CFLAGS) $(OBJS) $(LIBFT) $(PRINTF) -o $(NAME)
+	@$(CC) $(CFLAGS) $(OBJS) $(LIBFT) -o $(NAME)
 	@echo "✅ Compilation finished successfully."
 
 #build libft only if libft.a is outdated
@@ -40,25 +36,19 @@ $(LIBFT):
 	@echo "📦 Building libft..."
 	@$(MAKE) -s -C $(LIBFT_DIR)
 
-#build ft_printf only if libftprintf.a is outdated
-$(PRINTF):
-	@echo "📦 Building printf..."
-	@$(MAKE) -s -C $(PRINTF_DIR)
-
 clean:
 	@echo "🧹 Cleaning objects & dependencies..."
-	@$(RM) $(OBJDIR) *.d
+	@$(RM) $(OBJDIR)
 	@$(MAKE) -s -C $(LIBFT_DIR) clean
-	@$(MAKE) -s -C $(PRINTF_DIR) clean
 
 fclean: clean
 	@echo "🗑 removing executables & libreries..."
 	@$(RM) $(NAME)
 	@$(MAKE) -s -C $(LIBFT_DIR) fclean
-	@$(MAKE) -s -C $(PRINTF_DIR) fclean
 	@echo "✅ Cleanup completed successfully."
 re: fclean all
 
--include $(DEPS) # Include automatically generated dependencies
+# Include automatically generated dependencies
+-include $(DEPS) 
 
 .PHONY: all clean fclean re

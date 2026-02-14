@@ -1,14 +1,55 @@
-.DS_Store
-**/.DS_Store
+# Prerequisites
+*.d
 
-# Objetos y librerías
+# Object files
 *.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
 *.a
+*.la
+*.lo
 
-# Ejecutables de prueba
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
 *.out
-a.out
+*.app
+*.i*86
+*.x86_64
+*.hex
 
-# Basura del sistema
-.DS_Store
-*.swp
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+# debug information files
+*.dwo

@@ -1,0 +1,16 @@
+# Ejecutable principal
+fractol
+
+# Directorios de objetos (Main y Libft)
+obj/
+Libft/obj/
+
+# Librería compilada
+Libft/libft.a
+
+# Archivos de construcción de MLX42 (Según tu regla $(MLX42))
+MLX42/build/
+
+# Archivos del sistema (Mac/VSCode)
+.DS_Store
+.vscode/
