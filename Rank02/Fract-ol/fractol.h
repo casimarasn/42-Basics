@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   fractol.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msedeno- <msedeno-@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: msedeno- <msedeno-@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 21:11:40 by msedeno-          #+#    #+#             */
-/*   Updated: 2026/02/10 20:02:16 by msedeno-         ###   ########.fr       */
+/*   Updated: 2026/02/14 20:53:46 by msedeno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 /* --- Libraries --- */
 # include <math.h>
 # include <stdint.h>
-# include "Libft/libft.h"
+# include "Libft/inc/libft.h"
 # include "MLX42/include/MLX42/MLX42.h"
 
 /* Window dimensions */

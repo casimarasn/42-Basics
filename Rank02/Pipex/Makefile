@@ -1,7 +1,7 @@
 NAME = pipex
 INCLUDE = pipex.h
 CC = cc
-CFLAGS = -Wall -Wextra -Werror -I. -Ilibft
+CFLAGS = -Wall -Wextra -Werror -I. -Ilibft/inc
 RM = rm -rf
 
 OBJDIR = obj

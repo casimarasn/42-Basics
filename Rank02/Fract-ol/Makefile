@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: msedeno- <msedeno-@student.42malaga.com>   +#+  +:+       +#+         #
+#    By: msedeno- <msedeno-@student.42malaga.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/02 20:00:58 by msedeno-          #+#    #+#              #
-#    Updated: 2026/02/10 20:06:54 by msedeno-         ###   ########.fr        #
+#    Updated: 2026/02/14 20:56:09 by msedeno-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = fractol
 INCLUDE = fractol.h
 AR = ar rcs
 CC = cc
-CFLAGS = -Wall -Wextra -Werror -I. -ILibft
+CFLAGS = -Wall -Wextra -Werror -I. -ILibft -ILibft/inc
 RM = rm -rf
 
 #librarys

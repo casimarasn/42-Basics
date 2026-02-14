@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   pipex.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msedeno- <msedeno-@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: msedeno- <msedeno-@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/21 22:01:12 by casimarasn        #+#    #+#             */
-/*   Updated: 2026/02/11 16:52:01 by msedeno-         ###   ########.fr       */
+/*   Updated: 2026/02/14 20:57:20 by msedeno-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,7 @@
 # include <stdio.h>
 # include <sys/wait.h>
 # include <fcntl.h>
-# include "libft/libft.h"
-# include "printf/ft_printf.h"
+# include "libft/inc/libft.h"
 
 typedef struct s_pipex
 {
